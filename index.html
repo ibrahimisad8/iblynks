@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                padding : 0px;
+                margin  : 0px;
+                text-align : center;
+                font-family : "Cantarell", sans-serif;
+                color      : #555;
+            }
+            .wallper
+            {
+                padding : 20%; 
+            }
+            .button-style
+            {
+                background : #CCC;
+                border     : 1px solid #BBB; 
+                padding    : 9px 15px;
+                border-radius: 5px;
+                cursor : pointer;
+            }
+        </style>
+        <link href='css/iblynks-dailog.css' rel='stylesheet' type='text/css' />        
+        <script type="text/javascript" src="script/jquery.min.js"></script>
+        <script>
+                function currentUrl()
+                {  
+                     var path = 'http://localhost/iblynks/';
+   
+                     return path;       
+                 }
+        </script>
+        <script type="text/javascript" src="script/iblynks-0.1.js"></script>
+        <script>
+            $(function(){
+               $(".button-style").click(function(){
+                            var content = '<p>&copy; All rights reserved system developed by Ibrahim Isa</p>'+
+                                          '<p>Iblynks - Simple Light Box</p>'+
+                                          '<p><b>www.iblynks.com</b></p>'+
+                                          '';
+                            // Iblynks - Light Box
+                            iblynks({
+                                        out    : content,
+                                        width  : '595px',
+                                        height : '295px',
+                                        type   : 'Info',
+                                        error  : true
+                                    });
+
+               });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Light Box Div -->
+        <div class='ovl' ></div><div class='ovl_message' ></div>
+        <div class="wallper">
+            <!-- /End Light Box Div -->           
+            <h1>IBLYNKS LIGHT BOX</h1>
+            <div>
+                <button class="button-style" act="info">SHOW LIGHT BOX</button>
+            </div>
+        </div>
+    </body>
+</html>
